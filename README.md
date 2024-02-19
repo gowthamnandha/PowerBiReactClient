@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+Power BI React Integration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project demonstrates how to seamlessly embed Power BI reports, dashboards, and visuals into a React application, providing users with powerful analytics capabilities directly within the web application.
+Installation
 
-## Available Scripts
+    Create a new React application.
 
-In the project directory, you can run:
+    Install the powerbi-client-react library by running:
 
-### `npm start`
+    bash
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    npm install powerbi-client-react
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    For development dependencies, ensure to add power-react-client.
 
-### `npm test`
+Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Embedding Power BI into your React application is straightforward:
 
-### `npm run build`
+    Obtain the Report ID from your Power BI dashboard.
+    Extract the Embed URL by making a GET request to the Power BI REST API endpoint. Refer to the API documentation for details.
+    Utilize a valid Power BI Access Token for authentication. Refer to the Microsoft documentation for guidelines on token management.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Key Components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    PowerBIEmbed: This component from powerbi-client-react library facilitates the embedding of Power BI reports, dashboards, and visuals into your React application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Implementation Steps
 
-### `npm run eject`
+    Install the necessary dependencies.
+    Obtain the required information: Report ID, Embed URL, and Power BI Access Token.
+    Use the PowerBIEmbed component in your React application, passing the appropriate configuration parameters.
+    Handle authentication and token management using the guidelines provided in the Microsoft documentation.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Benefits
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Enhanced Analytics: Seamlessly integrate Power BI reports and dashboards, providing users with comprehensive analytics within the application.
+    Flexibility: Empower users to interact with Power BI visuals and create new reports directly within the React application.
+    Improved Decision-Making: Enable data-driven decision-making by providing access to real-time insights and analytics.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Conclusion
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+By following the steps outlined in this project, developers can integrate Power BI into their React applications, offering users a powerful and intuitive analytics experience. Harness the capabilities of Power BI to drive insights and optimize decision-making processes within your application.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For more details and resources, refer to the Power BI Client React API Documentation.
